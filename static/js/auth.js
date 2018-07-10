@@ -13,7 +13,6 @@ var OKTA_SETTINGS = new OktaSignIn({
 var okta = new OktaSignIn({
     baseUrl: "https://dev-406885.oktapreview.com",
     clientId: "0oafoxzxcjzYYN13B0h7",
-    redirectUri: '{{redirectUri configured in OIDC app}}',
     authParams: {
         issuer: "https://dev-406885.oktapreview.com/oauth2/default",
         responseType: ["token", "id_token"],
