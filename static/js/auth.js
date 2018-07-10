@@ -1,4 +1,4 @@
-var OKTA_SETTINGS = {
+var okta = new OktaSignIn({
     baseUrl: "https://dev-406885.oktapreview.com",
     clientId: "0oafoxzxcjzYYN13B0h7",
     redirectUri: '{{redirectUri configured in OIDC app}}',
@@ -7,10 +7,10 @@ var OKTA_SETTINGS = {
         // `display: page` will initiate the OAuth2 page redirect flow
         display: 'page'
     }
-};
+});
 
 
-var okta = new OktaSignIn({
+var OKTA_SETTINGS = new OktaSignIn({
     baseUrl: "https://dev-406885.oktapreview.com",
     clientId: "0oafoxzxcjzYYN13B0h7",
     authParams: {
